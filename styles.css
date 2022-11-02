@@ -1,0 +1,678 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #0E0837;
+
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+
+li {
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.icons li {
+    color: white;
+
+}
+
+main {
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+#main-page {
+    padding: 0 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: #0E0837;
+}
+
+#main-page img {
+    scale: 1.3;
+    flex-grow: 3;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 22;
+}
+
+.intro {
+    font-weight: 800;
+    background-image: url("https://i.gifer.com/OwRt.gif");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 3s;
+    animation: text linear infinite alternate-reverse 2s alternate;
+}
+
+.title .icons {
+    width: 40%;
+}
+
+#tours {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0 3rem;
+    background: #0E0837;
+}
+
+.events-cards {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+.card {
+    padding: 3rem 1rem;
+    border: none;
+    background-color: #100726;
+    color: white;
+
+}
+
+.card a {
+    color: white;
+    transition: all 0.5s;
+}
+
+.card a:hover {
+    color: ;
+}
+
+.card-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+    padding: 2rem;
+    z-index: 2;
+    color: white;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.card-image:hover img {
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+}
+
+.card-image:hover {
+    width: 30%;
+}
+
+.img-title {
+    transition: all 1s;
+}
+
+.card-image:hover .img-title {
+    transform: translateY(-100%);
+    /* width: max-content; */
+}
+
+.card-title {
+    font-size: 0.6rem;
+}
+
+#video-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #0E0837;
+
+}
+
+.video-image {
+    position: relative;
+    width: 80vw;
+    margin: auto;
+}
+
+.video-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-icon {
+    z-index: 22;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+    align-items: center;
+    background: #0E0837;
+    color: white;
+
+}
+
+.about-us {
+    width: 50%;
+}
+
+#list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #0E0837;
+    color: white;
+    padding: 0 3rem;
+    gap: 2rem;
+}
+
+.imageandlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 3;
+}
+
+.mylist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.tracks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.track-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #460C3A, #0E0829, #2B0F47);
+    padding: 2rem;
+    transition: all 0.8s;
+}
+
+.track-container:hover {
+    opacity: 0.8;
+    scale: 1.2;
+    background: linear-gradient(-45deg, #460C3A, #0E0829, #2B0F47);
+}
+
+.iconandhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: left;
+    background: linear-gradient(-45deg, #460C3A, #0E0829, #2B0F47);
+    flex-grow: 1;
+    padding: 1rem 3rem;
+}
+
+.tracks:nth-child(2) {
+    background-color: red;
+}
+
+.other-card {
+    display: flex;
+    justify-content: flex-start;
+
+    flex-grow: 1;
+}
+
+.artist-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeandicon {
+    display: flex
+}
+
+#upcoming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E0727;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.event-container {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(-45deg, #460C3A, #0E0829, #2B0F47);
+    color: white;
+    padding: 2rem;
+}
+
+.first-item {
+    display: flex;
+}
+
+#image-layout {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding: 0 5rem;
+    height: 30vh;
+}
+
+
+#image-layout img {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.image {
+    width: 30%;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.5s;
+
+}
+
+.image img {
+    object-fit: cover;
+
+}
+
+.image:nth-child(1) {
+    right: 0;
+    animation: first linear infinite alternate-reverse 2s;
+}
+
+.image:nth-child(2) {
+    animation-delay: 2s;
+    right: 15%;
+    animation: second linear 3s infinite alternate-reverse 2s;
+
+}
+
+.image:nth-child(3) {
+    right: 30%;
+    animation: third linear 4s infinite alternate-reverse 2s;
+
+}
+
+.image:nth-child(4) {
+    right: 45%;
+    animation: fourth linear 8s infinite alternate-reverse 2s;
+
+}
+
+.image:nth-child(5) {
+    right: 60%;
+    z-index: 2;
+    animation: fifth linear 5s infinite alternate-reverse 2s;
+
+}
+
+.image:nth-child(6) {
+    right: 75%;
+    z-index: 2;
+    animation: sixth linear 6s infinite alternate-reverse 2s;
+
+}
+
+/* @keyframes first {
+    from{
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+@keyframes second {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes third {
+    from{
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+@keyframes fourth {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fifth {
+    from{
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+@keyframes sixth {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+ */
+
+.image:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    scale: 1.01;
+    margin: 0 5rem;
+    width: 40%;
+    opacity: 1;
+    z-index: 9;
+    transform: translateY(-50%);
+}
+
+.image:hover .image:nth-child(6) {
+    transform: translateX(50%);
+}
+
+.image:hover img {
+    width: 40%;
+}
+
+.image:nth-child(6):hover {
+    transform: translate(50%, -50%);
+}
+
+.image:nth-child(5):hover {
+    transform: translate(60%, -50%);
+}
+
+.image:nth-child(4):hover {
+    transform: translate(70%, -50%);
+}
+
+#news {
+    width: 80%;
+    margin: auto;
+}
+
+.news-head {
+    margin-top: 8rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.news-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: -5rem;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-date {
+    color: #460C3A;
+}
+
+#sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    overflow: hidden;
+
+}
+
+.logo-image {
+    width: 80vw;
+    height: 100%;
+
+}
+
+.logo-image img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-contact {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    align-items: ;
+}
+
+.about-contact li,
+.Support-contact li {
+    width: 100%;
+    text-align: left;
+}
+
+.Support-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-contact ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.Support-contact ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-contact ul li {
+    text-align: left;
+}
+
+hr {
+    background: linear-gradient(to right, red, orange);
+    width: 100px;
+}
+
+.box-img {
+    position: relative;
+}
+
+.text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(20%, 40%);
+}
+
+.text-box .icons {
+    text-align: left;
+    margin-right: auto;
+}
+
+.text-para {
+    font-size: .9rem
+}
+
+.box .icons ul {
+    display: flex;
+}
+
+@media only screen and (max-width:1000px) {
+
+
+
+    #main-page {
+        flex-direction: column;
+        margin: auto;
+    }
+    #main-page img{
+        width: 100%;
+    }
+
+    #tours {
+        flex-direction: column;
+    }
+
+    .events-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .events-cards .card {
+        width: 100vw;
+        padding: 0 2rem;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    #video-section {
+        flex-direction: column;
+    }
+
+    #about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #about>div {
+        width: 100%;
+    }
+
+    #about .about-head {
+        text-align: center;
+    }
+    #list{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .imageandlist{
+        width:100%;
+    }
+    .album-card{
+        width: 100%;
+        margin:auto;
+        padding: 0;
+    }
+    .events{
+    grid-template-columns: 1fr;
+    }
+}
