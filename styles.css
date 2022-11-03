@@ -7,7 +7,24 @@
 body {
     font-family: sans-serif;
     background-color: #0E0837;
+    overflow-x: hidden;
+}
 
+video {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
 }
 
 h1 {
@@ -17,7 +34,7 @@ h1 {
 nav {
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     padding: 1rem 0;
 }
@@ -31,10 +48,23 @@ ul {
     color: white;
 }
 
+
 li {
     margin-right: 1rem;
     align-self: center;
+    animation: list linear 1s infinite;
+    transition: all 0.3s;
+    cursor: pointer;
 }
+
+li:hover {
+    background: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-10px);
+    scale: 1.3
+}
+
 
 .icons li {
     color: white;
@@ -47,7 +77,7 @@ main {
 }
 
 #main-page {
-    padding: 0 5rem;
+    padding: 0 15rem;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -65,7 +95,22 @@ main {
     flex-direction: column;
     position: relative;
     z-index: 22;
+    flex-grow: 1;
 }
+
+button{
+   transition:all 0.4s;
+   border:none;
+}
+.title button{
+    margin-top:15px;
+}
+button:hover{
+    transform:translateY(-10px);
+    
+}
+
+.title p{font-size:1.6rem}
 
 .intro {
     font-weight: 800;
@@ -191,25 +236,56 @@ main {
 #about {
     display: flex;
     justify-content: space-around;
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
     align-items: center;
+    width: 80%;
+    margin: auto;
     background: #0E0837;
     color: white;
-
 }
 
 .about-us {
     width: 50%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1.4;
+    text-transform: capatalize;
+}
+
+
 #list {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #0E0837;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 7)), url("https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/dj-sound-equipment-at-nightclubs-and-music-festivals-edm-future-house-music-and-so-on.jpg");
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    /* background-color: #0E0837; */
     color: white;
     padding: 0 3rem;
     gap: 2rem;
+    width: 100%;
+    margin: auto;
+}
+
+.cont {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem
 }
 
 .imageandlist {
@@ -236,7 +312,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(45deg, #460C3A, #0E0829, #2B0F47);
+    background: linear-gradient(45deg, rgb(70, 12, 58), #0E0829, #2B0F47);
     padding: 2rem;
     transition: all 0.8s;
 }
@@ -259,8 +335,21 @@ main {
     justify-content: space-around;
     justify-items: left;
     background: linear-gradient(-45deg, #460C3A, #0E0829, #2B0F47);
-    flex-grow: 1;
+    width: 40%;
     padding: 1rem 3rem;
+}
+
+.album-card h1 {
+    width: max-content
+}
+
+
+.album-card .icon {
+    margin-right: 2rem;
+}
+
+.album-card .availability {
+    color: #AA1072
 }
 
 .tracks:nth-child(2) {
@@ -302,7 +391,7 @@ main {
     justify-content: space-between;
     background: linear-gradient(-45deg, #460C3A, #0E0829, #2B0F47);
     color: white;
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .first-item {
@@ -315,7 +404,7 @@ main {
     margin: auto;
     position: relative;
     padding: 0 5rem;
-    height: 30vh;
+    height:30vh;
 }
 
 
@@ -459,6 +548,7 @@ main {
 #news {
     width: 80%;
     margin: auto;
+    margin-top:6rem;
 }
 
 .news-head {
@@ -614,20 +704,86 @@ hr {
     display: flex;
 }
 
-@media only screen and (max-width:1000px) {
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    background: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%) !important;
+    clip-path: circle();
+    border-radius: 50%;
+}
 
+.iconandhead .icon {
+    background: transparent !important;
+}
+
+.event-container,
+.first,
+.second,
+.iconandlocation,
+.iconanddate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-container {
+    width: 60%;
+}
+
+.first,
+.second {
+    width: 50%;
+    gap: 2rem;
+}
+
+.event-icon {
+    background-color: #AA1072;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+
+@media only screen and (max-width:1024px) {
 
 
     #main-page {
         flex-direction: column;
         margin: auto;
+        width: 70%;
+        margin: auto;
+
+        padding: 1rem 1rem;
     }
-    #main-page img{
-        width: 100%;
+
+    #main-page img {
+        width: 70%;
+    }
+
+    .main-image {
+        margin: auto;
+        overflow: hidden;
+        width: 70%;
     }
 
     #tours {
         flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .events {
+        width: 100%;
+    }
+
+    .events-card .card {
+        padding: -1px 2rem;
+    }
+
+    .card {
+        padding: 2rem 1rem;
+
     }
 
     .events-cards {
@@ -635,10 +791,7 @@ hr {
         width: 100%;
     }
 
-    .events-cards .card {
-        width: 100vw;
-        padding: 0 2rem;
-    }
+
 
     .card-image {
         width: 100%;
@@ -660,19 +813,58 @@ hr {
     #about .about-head {
         text-align: center;
     }
-    #list{
+
+    #list {
         flex-direction: column;
         width: 100vw;
     }
-    .imageandlist{
-        width:100%;
-    }
-    .album-card{
+
+    .imageandlist {
         width: 100%;
-        margin:auto;
+    }
+
+    .album-card {
+        width: 100%;
+        margin: auto;
         padding: 0;
     }
-    .events{
-    grid-template-columns: 1fr;
+
+    .events {
+        grid-template-columns: 1fr;
     }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .news-card-container {
+        flex-direction: column;
+    }
+
+
+
+    .text-box {
+        width: 70%;
+        padding: 0.5rem 1rem;
+    }
+
+    .support {
+        text-align: center;
+    }
+
+    .card-image {
+        pointer-events: none;
+    }
+
+    .card {
+        width: 100vw;
+    }
+
+    .album-card {
+        padding: 1rem 2rem;
+    }
+    #image-layout{
+        height:20vh;
+    }
+
 }
