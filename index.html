@@ -7,13 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="styles.css">
         <title>Document</title>
     </head>
 
     <body>
-        <nav>
+        <!-- <nav>
             <div class="logo">Logo</div>
             <div class="nav-items">
                 <ul>
@@ -34,15 +37,16 @@
                     <li><i class="bi bi-music-note"></i></li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <!-- first page -->
+        <!-- <video src="./3D tech logo by Taiga3 on Envato Elements.mp4" loop autoplay muted></video> -->
         <main id="main-page">
             <div class="title">
                 <div class="welcome" style="color:#D61361 ;">
                     <h3>Welcome</h3>
                 </div>
-                <div class="intro" style="color: white;font-size: 3rem;">
-                    <h1>Let's Play the Beat and Dance</h1>
+                <div class="intro" style="color: white;">
+                    <h1 style="font-size:3rem;">Let's Play the Beat and Dance</h1>
                 </div>
                 <div class="para" style="color: white;">
                     <p>A new album has been released this month with a new style</p>
@@ -51,12 +55,12 @@
                     <p>Available on</p>
                 </div>
                 <div class="icons">
-                    <ul>
-                        <li>i</li>
-                        <li>i</li>
-                        <li>i</li>
-                        <li>i</li>
-                        <li>i</li>
+                    <ul style="padding:0; width: max-content;">
+                        <li><i class="bi bi-spotify"></i></li>
+                        <li><i class="fa-brands fa-soundcloud"></i></li>
+                        <li><i class="fa-solid fa-music"></i></li>
+                        <li><i class="fa-solid fa-radio"></i></li>
+
                     </ul>
                 </div>
                 <button
@@ -83,7 +87,7 @@
                             <p>21 April 2021, Jakarta</p>
                         </div>
                         <div class="more">
-                            <a href="#">Learn More -></a>
+                            <button class="btn btn-danger">Learn More</button> 
                         </div>
                     </div>
                     <div class="card">
@@ -94,7 +98,7 @@
                             <p>21 April 2021, Jakarta</p>
                         </div>
                         <div class="more">
-                            <a href="#">Learn More -></a>
+                        <button class="btn btn-danger">Learn More</button> 
                         </div>
                     </div>
                     <div class="card">
@@ -105,7 +109,7 @@
                             <p>21 April 2021, Jakarta</p>
                         </div>
                         <div class="more">
-                            <a href="#">Learn More -></a>
+                        <button class="btn btn-danger">Learn More</button> 
                         </div>
                     </div>
                 </div>
@@ -155,201 +159,217 @@
             </div>
         </main>
         <main id="list">
-            <div class="imageandlist">
-                <div class="listimage">
-                    <img src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/albums-1-e1618241695288.png"
-                        alt="">
+            <div class="cont">
+
+                <div class="imageandlist">
+                    <div class="listimage" style="width: 70%;">
+                        <img style="width:100%;"
+                            src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/albums-1-e1618241695288.png"
+                            alt="">
+                    </div>
+                    <div class="my-list">
+                        <div class="list-head" style="text-transform: uppercase;color:#D61361;">
+                            <h4>track list</h4>
+                        </div>
+                        <div class="tracks">
+                            <div class="track-container" id="id1">
+                                <div class="iconandhead">
+                                    <div class="icon" style="background:transparent"><i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="song">From Start</div>
+                                </div>
+                                <div class="timeandicon">
+                                    <div class="time">
+                                        <p>04:12</p>
+                                    </div>
+                                    <div class="icons">
+                                        <ul>
+                                            <li><i class="bi bi-spotify"></i></li>
+                                            <li><i class="fa-brands fa-soundcloud"></i></li>
+                                            <li><i class="fa-solid fa-music"></i></li>
+                                            <li><i class="fa-solid fa-radio"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track-container" id="id2">
+                                <div class="iconandhead">
+                                    <div class="icon" style="background:transparent"><i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="song">From Start</div>
+                                </div>
+                                <div class="timeandicon">
+                                    <div class="time">
+                                        <p>04:12</p>
+                                    </div>
+                                    <div class="icons">
+                                        <ul>
+
+                                            <li><i class="bi bi-spotify"></i></li>
+                                            <li><i class="fa-brands fa-soundcloud"></i></li>
+                                            <li><i class="fa-solid fa-music"></i></li>
+                                            <li><i class="fa-solid fa-radio"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track-container" id="id3">
+                                <div class="iconandhead">
+                                    <div class="icon" style="background:transparent"><i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="song">From Start</div>
+                                </div>
+                                <div class="timeandicon">
+                                    <div class="time">
+                                        <p>04:12</p>
+                                    </div>
+                                    <div class="icons">
+                                        <ul>
+
+                                            <li><i class="bi bi-spotify"></i></li>
+                                            <li><i class="fa-brands fa-soundcloud"></i></li>
+                                            <li><i class="fa-solid fa-music"></i></li>
+                                            <li><i class="fa-solid fa-radio"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track-container" id="id4">
+                                <div class="iconandhead">
+                                    <div class="icon" style="background:transparent"><i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="song">From Start</div>
+                                </div>
+                                <div class="timeandicon">
+                                    <div class="time">
+                                        <p>04:12</p>
+                                    </div>
+                                    <div class="icons">
+                                        <ul>
+
+                                            <li><i class="bi bi-spotify"></i></li>
+                                            <li><i class="fa-brands fa-soundcloud"></i></li>
+                                            <li><i class="fa-solid fa-music"></i></li>
+                                            <li><i class="fa-solid fa-radio"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track-container" id="id5">
+                                <div class="iconandhead">
+                                    <div class="icon" style="background:transparent"><i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="song">From Start</div>
+                                </div>
+                                <div class="timeandicon">
+                                    <div class="time">
+                                        <p>04:12</p>
+                                    </div>
+                                    <div class="icons">
+                                        <ul>
+
+                                            <li><i class="bi bi-spotify"></i></li>
+                                            <li><i class="fa-brands fa-soundcloud"></i></li>
+                                            <li><i class="fa-solid fa-music"></i></li>
+                                            <li><i class="fa-solid fa-radio"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track-container" id="id6">
+                                <div class="iconandhead">
+                                    <div class="icon" style="background:transparent"><i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="song">From Start</div>
+                                </div>
+                                <div class="timeandicon">
+                                    <div class="time">
+                                        <p>04:12</p>
+                                    </div>
+                                    <div class="icons">
+                                        <ul>
+
+                                            <li><i class="bi bi-spotify"></i></li>
+                                            <li><i class="fa-brands fa-soundcloud"></i></li>
+                                            <li><i class="fa-solid fa-music"></i></li>
+                                            <li><i class="fa-solid fa-radio"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="my-list">
-                    <div class="list-head" style="text-transform: uppercase;">
-                        <h2>track list</h2>
+                <div class="album-card">
+                    <div class="release">
+                        <h3>New Release</h3>
                     </div>
-                    <div class="tracks">
-                        <div class="track-container">
-                            <div class="iconandhead">
-                                <div class="icon">Icon</div>
-                                <div class="song">From Start</div>
-                            </div>
-                            <div class="timeandicon">
-                                <div class="time">
-                                    <p>04:12</p>
-                                </div>
-                                <div class="icons">
-                                    <ul>
-
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="album-card-title">
+                        <h1>"Our journey"</h1>
+                    </div>
+                    <div class="availability">
+                        <h3>AVAILABLE ON</h3>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li><i class="bi bi-spotify"></i></li>
+                        <li><i class="fa-brands fa-soundcloud"></i></li>
+                        <li><i class="fa-solid fa-music"></i></li>
+                        <li><i class="fa-solid fa-radio"></i></li>
+                        </ul>
+                    </div>
+                    <div class="album-para">
+                        <p>Felis ligula taciti class lobortis efficitur eleifend lorem. Natoque ultricies sodales
+                            dapibus.
+                            Letius eros nullam libero hac dictumst. Massa ridiculus lacinia aptent aenean orci facilisi.
+                            Pellentesque facilisi posuere dolor luctus nulla euismod. Libero tellus phasellus pharetra
+                            venenatis ac gravida nisl. Ut tempus enim proin vehicula leo metus.</p>
+                    </div>
+                    <div class="other-album">
+                        <h3>detail album</h3>
+                    </div>
+                    <div class="other-card">
+                        <div class="icon">
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="track-container">
-                            <div class="iconandhead">
-                                <div class="icon">Icon</div>
-                                <div class="song">From Start</div>
-                            </div>
-                            <div class="timeandicon">
-                                <div class="time">
-                                    <p>04:12</p>
-                                </div>
-                                <div class="icons">
-                                    <ul>
-
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track-container">
-                            <div class="iconandhead">
-                                <div class="icon">Icon</div>
-                                <div class="song">From Start</div>
-                            </div>
-                            <div class="timeandicon">
-                                <div class="time">
-                                    <p>04:12</p>
-                                </div>
-                                <div class="icons">
-                                    <ul>
-
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track-container">
-                            <div class="iconandhead">
-                                <div class="icon">Icon</div>
-                                <div class="song">From Start</div>
-                            </div>
-                            <div class="timeandicon">
-                                <div class="time">
-                                    <p>04:12</p>
-                                </div>
-                                <div class="icons">
-                                    <ul>
-
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track-container">
-                            <div class="iconandhead">
-                                <div class="icon">Icon</div>
-                                <div class="song">From Start</div>
-                            </div>
-                            <div class="timeandicon">
-                                <div class="time">
-                                    <p>04:12</p>
-                                </div>
-                                <div class="icons">
-                                    <ul>
-
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="track-container">
-                            <div class="iconandhead">
-                                <div class="icon">Icon</div>
-                                <div class="song">From Start</div>
-                            </div>
-                            <div class="timeandicon">
-                                <div class="time">
-                                    <p>04:12</p>
-                                </div>
-                                <div class="icons">
-                                    <ul>
-
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                        <li>i</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="artist-container">
+                            <div class="name">Artist</div>
+                            <p>BeatKit Ft. Rockerman</p>
                         </div>
 
                     </div>
+                    <div class="other-card">
+                        <div class="icon"> <i class="bi bi-mic-fill"></i>
+                        </div>
+                        <div class="artist-container">
+                            <div class="name">Artist</div>
+                            <p>BeatKit Ft. Rockerman</p>
+                        </div>
+
+                    </div>
+                    <div class="other-card">
+                        <div class="icon"> <i class="bi bi-mic-fill"></i>
+                        </div>
+                        <div class="artist-container">
+                            <div class="name">Artist</div>
+                            <p>BeatKit Ft. Rockerman</p>
+                        </div>
+
+                    </div>
+                    <div class="other-card">
+                        <div class="icon"> <i class="bi bi-mic-fill"></i>
+                        </div>
+                        <div class="artist-container">
+                            <div class="name">Artist</div>
+                            <p>BeatKit Ft. Rockerman</p>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-            <div class="album-card">
-                <div class="release">
-                    <h3>New Release</h3>
-                </div>
-                <div class="album-card-title">
-                    <h1>"Our journey"</h1>
-                </div>
-                <div class="availability">
-                    <h3>AVAILABLE ON</h3>
-                </div>
-                <div class="icons">
-                    <ul>
-                        <li>i</li>
-                        <li>i</li>
-                        <li>i</li>
-                        <li>i</li>
-                    </ul>
-                </div>
-                <div class="album-para">
-                    <p>Felis ligula taciti class lobortis efficitur eleifend lorem. Natoque ultricies sodales dapibus.
-                        Letius eros nullam libero hac dictumst. Massa ridiculus lacinia aptent aenean orci facilisi.
-                        Pellentesque facilisi posuere dolor luctus nulla euismod. Libero tellus phasellus pharetra
-                        venenatis ac gravida nisl. Ut tempus enim proin vehicula leo metus.</p>
-                </div>
-                <div class="other-album">
-                    <h3>detail album</h3>
-                </div>
-                <div class="other-card">
-                    <div class="icon">Icon</div>
-                    <div class="artist-container">
-                        <div class="name">Artist</div>
-                        <p>BeatKit Ft. Rockerman</p>
-                    </div>
 
-                </div>
-                <div class="other-card">
-                    <div class="icon">Icon</div>
-                    <div class="artist-container">
-                        <div class="name">Artist</div>
-                        <p>BeatKit Ft. Rockerman</p>
-                    </div>
-
-                </div>
-                <div class="other-card">
-                    <div class="icon">Icon</div>
-                    <div class="artist-container">
-                        <div class="name">Artist</div>
-                        <p>BeatKit Ft. Rockerman</p>
-                    </div>
-
-                </div>
-                <div class="other-card">
-                    <div class="icon">Icon</div>
-                    <div class="artist-container">
-                        <div class="name">Artist</div>
-                        <p>BeatKit Ft. Rockerman</p>
-                    </div>
-
-                </div>
-
-            </div>
         </main>
         <main id="upcoming">
             <div class="live" style="color:#D61361;text-transform:uppercase">
@@ -358,173 +378,139 @@
             <div class="shows" style="color:white;">
                 <h1>Upcoming Shows</h1>
             </div>
-            <div class="events">
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
+            <div class="event-container">
+                <div class="first">
+                    <div class="iconanddate">
+                         <div class="event-icon">
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
-                        </div>
-                    </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
-                    </div>
-                </div>
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
-                        </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="event-date">
+                            <h4>21 <br>  </h4>
+                            <p>April</p>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="title-event">
+                        <h4>Jakarta Musical Festival</h4>
                     </div>
                 </div>
-                <div class="event-container">
-                    <div class="first-item">
+                <div class="second">
+                    <div class="iconandlocation">
                         <div class="event-icon">
-                            <h5>icon</h5>
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="location">
+                            <div class="location-title">
+                                <h5>Jakarta</h5>
+                            </div>
+                            <div class="location-time">
+                                <p>07:00pm</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="button-container">
+                        <button class="btn btn-success">Buy Ticket</button>
                     </div>
                 </div>
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
+            </div>
+            <div class="event-container">
+                <div class="first">
+                    <div class="iconanddate">
+                         <div class="event-icon">
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
-                        </div>
-                    </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
-                    </div>
-                </div>
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
-                        </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="event-date">
+                            <h4>21 <br>  </h4>
+                            <p>April</p>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="title-event">
+                        <h4>Jakarta Musical Festival</h4>
                     </div>
                 </div>
-                <div class="event-container">
-                    <div class="first-item">
+                <div class="second">
+                    <div class="iconandlocation">
                         <div class="event-icon">
-                            <h5>icon</h5>
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="location">
+                            <div class="location-title">
+                                <h5>Jakarta</h5>
+                            </div>
+                            <div class="location-time">
+                                <p>07:00pm</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="button-container">
+                        <button class="btn btn-success">Buy Ticket</button>
                     </div>
                 </div>
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
+            </div>
+            <div class="event-container">
+                <div class="first">
+                    <div class="iconanddate">
+                         <div class="event-icon">
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
-                        </div>
-                    </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
-                    </div>
-                </div>
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
-                        </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="event-date">
+                            <h4>21 <br>  </h4>
+                            <p>April</p>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="title-event">
+                        <h4>Jakarta Musical Festival</h4>
                     </div>
                 </div>
-                <div class="event-container">
-                    <div class="first-item">
+                <div class="second">
+                    <div class="iconandlocation">
                         <div class="event-icon">
-                            <h5>icon</h5>
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="location">
+                            <div class="location-title">
+                                <h5>Jakarta</h5>
+                            </div>
+                            <div class="location-time">
+                                <p>07:00pm</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="button-container">
+                        <button class="btn btn-success">Buy Ticket</button>
                     </div>
                 </div>
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
+            </div>
+            <div class="event-container">
+                <div class="first">
+                    <div class="iconanddate">
+                         <div class="event-icon">
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
-                        </div>
-                    </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
-                    </div>
-                </div>
-                <div class="event-container">
-                    <div class="first-item">
-                        <div class="event-icon">
-                            <h5>icon</h5>
-                        </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="event-date">
+                            <h4>21 <br>  </h4>
+                            <p>April</p>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="title-event">
+                        <h4>Jakarta Musical Festival</h4>
                     </div>
                 </div>
-                <div class="event-container">
-                    <div class="first-item">
+                <div class="second">
+                    <div class="iconandlocation">
                         <div class="event-icon">
-                            <h5>icon</h5>
+                            <i class="bi bi-mic-fill"></i>
                         </div>
-                        <div class="date-container">
-                            <div class="date">32</div>
-                            <div class="month">April</div>
+                        <div class="location">
+                            <div class="location-title">
+                                <h5>Jakarta</h5>
+                            </div>
+                            <div class="location-time">
+                                <p>07:00pm</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="event-name">
-                        <h1>Jakarta Music Fest</h1>
+                    <div class="button-container">
+                        <button class="btn btn-success">Buy Ticket</button>
                     </div>
                 </div>
             </div>
@@ -559,9 +545,9 @@
                         <h1>News & Update</h1>
                     </div>
                 </div>
-                <button>More News -></button>
+                <button class="btn btn-success">More News -></button>
             </div>
-            <hr style="background:linear-gradient(to right, red,blue,green);height: 2px;">
+            <hr style="background:linear-gradient(to right, red,orange,green);height: 2px;width:100%;">
             <div class="news-card-container">
                 <div class="news-card">
                     <div class="news-image">
@@ -657,9 +643,9 @@
                         </div>
                         <div class="icons">
                             <ul>
-                                <li>i</li>
-                                <li>i</li>
-                                <li>i</li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
                             </ul>
                         </div>
                     </div>
@@ -690,6 +676,7 @@
                 </div>
             </div>
         </footer>
+        <script src="app.js"></script>
     </body>
 
 </html>
