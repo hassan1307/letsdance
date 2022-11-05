@@ -807,6 +807,9 @@ hr {
         position:absolute;
         scale:1.2
     }
+    .title button{
+        margin:0 auto;
+    }
 
     .main-image {
         margin: auto;
