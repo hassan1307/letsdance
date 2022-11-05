@@ -126,8 +126,12 @@ button:hover{
 
 .title .icons {
     width: 40%;
+    margin:0 auto;
 }
 
+.icons ul{
+    margin-left:auto;
+}
 #tours {
     display: flex;
     align-items: baseline;
@@ -768,7 +772,18 @@ hr {
 .listimage{
     width:70%;
 }
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1150px) {
+    #main-page{
+        width:100vw;
+    }
+    .intro{
+        width:400px;
+    }
+}
+
+
+
+@media only screen and (max-width:1000px) {
 
 
     #main-page {
